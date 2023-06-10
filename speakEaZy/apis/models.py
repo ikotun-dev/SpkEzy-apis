@@ -18,5 +18,6 @@ class Member(AbstractUser):
         return  f"self.username"
 
 class Conversation(models.Model):
+    participant_1 = models.Foreignkey(Member)
     pass
 
